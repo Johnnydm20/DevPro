@@ -1,8 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.Collections.Concurrent;
-using WebDriverManager;
-using WebDriverManager.DriverConfigs.Impl;
 
 namespace Common
 {
