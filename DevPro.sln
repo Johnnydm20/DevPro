@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{8CA5A6C2-AD49-4688-95D4-EF1452E366B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MapCore", "MapCore", "{2B975B99-9044-4588-91A2-C868A5F2E26F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UITests", "UITests", "{B0B45877-CC63-490B-819E-2D8956160F22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common\Common.csproj", "{2ECDEE34-4357-4EA1-B1B0-698CA486C1B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapCore", "MapCore\MapCore\MapCore.csproj", "{3F9ECE7B-002E-4624-8CE5-96BAE7249C4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITesting", "UITests\UITesting\UITesting.csproj", "{93A04063-9C2A-4FF9-B1CA-28D1757F8AC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2ECDEE34-4357-4EA1-B1B0-698CA486C1B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ECDEE34-4357-4EA1-B1B0-698CA486C1B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ECDEE34-4357-4EA1-B1B0-698CA486C1B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ECDEE34-4357-4EA1-B1B0-698CA486C1B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F9ECE7B-002E-4624-8CE5-96BAE7249C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9ECE7B-002E-4624-8CE5-96BAE7249C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F9ECE7B-002E-4624-8CE5-96BAE7249C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F9ECE7B-002E-4624-8CE5-96BAE7249C4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93A04063-9C2A-4FF9-B1CA-28D1757F8AC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A04063-9C2A-4FF9-B1CA-28D1757F8AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93A04063-9C2A-4FF9-B1CA-28D1757F8AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93A04063-9C2A-4FF9-B1CA-28D1757F8AC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2ECDEE34-4357-4EA1-B1B0-698CA486C1B6} = {8CA5A6C2-AD49-4688-95D4-EF1452E366B2}
+		{3F9ECE7B-002E-4624-8CE5-96BAE7249C4C} = {2B975B99-9044-4588-91A2-C868A5F2E26F}
+		{93A04063-9C2A-4FF9-B1CA-28D1757F8AC3} = {B0B45877-CC63-490B-819E-2D8956160F22}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E67F05B-4FA7-4B12-BBD6-D853419068BB}
+	EndGlobalSection
+EndGlobal
