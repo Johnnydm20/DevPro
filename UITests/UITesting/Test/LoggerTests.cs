@@ -12,12 +12,16 @@
         [Test, TestCaseSource(typeof(Data), nameof(Data.LoginSuccessfully))]
         public void Task1_LoginSuccessfully(string userName, string userPassword)
         {
+            //Go to DemoQA site
             DevProMap.Login.NavigateToDemoQA();
 
+            //Enter the user name
             DevProMap.Login.UserNameInput.SetText(userName);
 
+            //Type the user password
             DevProMap.Login.PasswordInput.SetText(userPassword);
 
+            //Click on Login button
             DevProMap.Login.LoginButton.Click();
 
             //Verify if User Name label is displayed
@@ -26,6 +30,7 @@
             // LogMessage messages
             logger.LogMessage("application.log", "User logged in", "INFO");
 
+            //Kill the browser process
             DevProMap.CloseBrowser();
         }
 
@@ -37,12 +42,16 @@
         [Test, TestCaseSource(typeof(Data), nameof(Data.LoginFailed))]
         public void Task1_LoginFailed(string userName, string userPassword)
         {
+            //Go to DemoQA site
             DevProMap.Login.NavigateToDemoQA();
 
+            //Enter the user name
             DevProMap.Login.UserNameInput.SetText(userName);
 
+            //Type the user password
             DevProMap.Login.PasswordInput.SetText(userPassword);
 
+            //Click on Login button
             DevProMap.Login.LoginButton.Click();
 
             //Verify if User Name label is displayed
@@ -51,6 +60,7 @@
             // LogMessage messages
             logger.LogMessage("application.log", "Failed login attempt", "WARNING");
 
+            //Kill the browser process
             DevProMap.CloseBrowser();
         }
     }

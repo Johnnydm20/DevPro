@@ -17,19 +17,10 @@ namespace MapCore.Maper.BasicObject
             Locator = locator;
         }
 
-        public void Click()
-        {
-            DriverHelper.Click(Locator);
-        }
-
         public void SetText(string text)
         {
             DriverHelper.SetText(Locator, text);
         }
 
-        public void Clear()
-        {
-            DriverHelper.Clear(Locator);
-        }
     }
 }
