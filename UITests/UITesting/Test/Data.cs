@@ -6,7 +6,7 @@ namespace UITesting.Test
     {
         public static IEnumerable<TestCaseData> Exercise1()
         {
-            yield return new TestCaseData(Resources.Configuration.DATA1, "johnny");
+            yield return new TestCaseData(Resources.Configuration.DATA1);
         }
     }
 }

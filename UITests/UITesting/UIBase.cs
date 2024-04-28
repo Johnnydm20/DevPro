@@ -2,11 +2,11 @@ namespace UITesting
 {
     public class UIBase
     {
-        internal DevProMap DrevealMap;
+        internal DevProMap DevProMap;
 
         public UIBase()
         {
-            DrevealMap = new DevProMap();
+            DevProMap = new DevProMap();
         }
 
         /*[SetUp]

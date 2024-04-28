@@ -16,9 +16,8 @@ namespace MapCore.Maper.Login
         public void LogIntoXXX()
         {
             Browser.CreateWebDriver();
-            //Browser.NavigateTo(@"http://20.80.227.172/embedded/develop/integration");
-            Browser.NavigateTo(@"http://localhost/Integration/Login");
-            LoginButton.Click();
+            Browser.NavigateTo(@"https://testpages.eviltester.com/styled/auth/basic-auth-test.html");
+            //LoginButton.Click();
         }
     }
 }

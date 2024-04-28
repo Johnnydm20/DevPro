@@ -1,4 +1,5 @@
-﻿using MapCore.Maper.Login;
+﻿using Common;
+using MapCore.Maper.Login;
 
 namespace MapCore
 {
@@ -9,6 +10,11 @@ namespace MapCore
         public DevProMap()
         {
             Login = new LoginPage();
+        }
+
+        public void CloseBrowser()
+        {
+            Browser.CloseBrowser();
         }
     }
 }
