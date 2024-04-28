@@ -9,10 +9,9 @@ namespace UITesting
             DevProMap = new DevProMap();
         }
 
-        /*[SetUp]
-        public void Setup()
-        {
-        }*/
+        //Setup
+
+        //TearDown
 
     }
 }

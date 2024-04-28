@@ -1,6 +1,4 @@
-﻿using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Resources;
-
-namespace UITesting.Test
+﻿namespace UITesting.Test
 {
     public class Data
     {
