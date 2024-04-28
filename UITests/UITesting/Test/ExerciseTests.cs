@@ -9,11 +9,14 @@
         [Test, TestCaseSource(typeof(Data), nameof(Data.Exercise1))]
         public void Exercise1_ExpectedResutl(string reportName)
         {
-            //Login to dReveal
-            DevProMap.Login.LogIntoXXX();
+            // Initialize logger
+            Logger logger = new Logger();
 
-            //Close browser
-            DevProMap.CloseBrowser();
+            // LogMessage messages
+            logger.LogMessage("application.log", "User logged in", "INFO");
+            logger.LogMessage("application.log", "Failed login attempt", "WARNING");
+            logger.LogMessage("application.log", "User logged in", "INFO");
+            logger.LogMessage("application.log", "User updated info", "INFO");
         }
     }
 }
