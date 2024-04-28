@@ -3,7 +3,11 @@
     public class LocatorManager
     {
         #region Common Locators
-        public const string ADMIN_CULTURE_USER_BTN_LOGIN = "button.btn.btn-outline-primary[onclick=\"customAccess('admin_culture_browser')\"]";
+        public const string BTN_LOGIN = "login";
+        public const string USER_NAME_INPUT = "#userName";
+        public const string PASSWORD_INPUT = "password";
+        public const string USER_NAME_LABEL = "userName-label";
+        public const string INVALID_USER_LABEL = "p#name";
         #endregion
 
         #region Dynamic Locators

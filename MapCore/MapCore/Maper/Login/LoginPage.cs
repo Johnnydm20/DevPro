@@ -7,17 +7,24 @@ namespace MapCore.Maper.Login
     public class LoginPage
     {
         public ButtonObject LoginButton { get; set; }
+        public InputObject UserNameInput { get; set; }
+        public InputObject PasswordInput { get; set; }
+        public ButtonObject UserNameLabel { get; set; }
+        public ButtonObject InvalidUserLabel { get; set; }
 
         public LoginPage()
         {
-            LoginButton = new ButtonObject(By.CssSelector(LocatorManager.ADMIN_CULTURE_USER_BTN_LOGIN));
+            LoginButton = new ButtonObject(By.Id(LocatorManager.BTN_LOGIN));
+            UserNameInput = new InputObject(By.CssSelector(LocatorManager.USER_NAME_INPUT));
+            PasswordInput = new InputObject(By.Id(LocatorManager.PASSWORD_INPUT));
+            UserNameLabel = new ButtonObject(By.Id(LocatorManager.USER_NAME_LABEL));
+            InvalidUserLabel = new ButtonObject(By.Id(LocatorManager.INVALID_USER_LABEL));
         }
 
-        public void LogIntoXXX()
+        public void NavigateToDemoQA()
         {
             Browser.CreateWebDriver();
-            Browser.NavigateTo(@"https://testpages.eviltester.com/styled/auth/basic-auth-test.html");
-            //LoginButton.Click();
+            Browser.NavigateTo(@"https://demoqa.com/login");
         }
     }
 }

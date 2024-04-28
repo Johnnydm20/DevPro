@@ -12,6 +12,8 @@ namespace MapCore.Maper.BasicObject
             Locator = locator;
         }
 
+        public virtual bool IsDisplayed => DriverHelper.ElementIsDisplayed(Locator);
+
         public void Click()
         {
             DriverHelper.Click(Locator);

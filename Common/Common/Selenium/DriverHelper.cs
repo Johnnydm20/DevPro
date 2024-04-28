@@ -25,6 +25,26 @@ namespace Common.Selenium
         }
 
         /// <summary>
+        /// Clear Input Text.
+        /// </summary>
+        /// <param name="locator"> Locator of webElement </param>
+        public static void Clear(By locator)
+        {
+            try
+            {
+                if (ElementIsDisplayed(locator))
+                {
+                    var webElement = Browser.GetDriver().FindElement(locator);
+                    webElement.Clear();
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        /// <summary>
         /// Method to Click element.
         /// </summary>
         /// <param name="locator"> Locator of webElement </param>
