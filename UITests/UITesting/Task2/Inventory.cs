@@ -4,7 +4,14 @@
     {
         Logger logger = new Logger();
 
-        public static List<Product> SortProducts(List<Product> products, string sortKey, bool sortOrder)
+        /// <summary>
+        /// Method that sort a list Products
+        /// </summary>
+        /// <param name="products"> List of products </param>
+        /// <param name="sortKey"> Sort key value </param>
+        /// <param name="sortOrder"> Sort order value </param>
+        /// <returns> A list of Products sorted by key and ascending/descending </returns>
+        public List<Product> SortProducts(List<Product> products, string sortKey, bool sortOrder)
         {
             switch (sortKey.ToLower())
             {
@@ -27,8 +34,12 @@
                     throw new ArgumentException("Invalid sort key");
             }
         }
+
+        /// <summary>
+        /// Test method that setup the List products, sort the list and log the sorted list.
+        /// </summary>
         [Test]
-        public void prueba()
+        public void SortedList()
         {
             //List of products
             List<Product> products = new List<Product>
@@ -38,10 +49,10 @@
             new Product { Name = "Product C", Price = 50, Stock = 10 }
             };
 
-            //Sort parameters
-            List<Product> sortedProducts = SortProducts(products, "stock", true);
+            //Sort parameters. E.g: sort_key = "price",  ascending = False
+            List<Product> sortedProducts = SortProducts(products, "price", false);
 
-            // Log products into inventory.log
+            //Log products into inventory.log
             foreach (var product in sortedProducts)
             {
                 logger.LogInventory(product.Name, product.Price.ToString(), product.Stock.ToString());
